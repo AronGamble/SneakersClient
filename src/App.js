@@ -80,7 +80,7 @@ function App() {
           </div>
         </div>
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-1.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" />
           <div className="content colors-e">
             <div className="container">
               <h2>About</h2>
@@ -119,7 +119,7 @@ function App() {
           </div>
         </div>
         <div className="view" id="how-we-work">
-          <img alt className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-0.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" />
           <div className="content colors-h">
             <div className="container">
               <h3><span className="highlight">How</span> We Work</h3>
@@ -164,7 +164,7 @@ function App() {
       </section>
       <section id="team">
         <div className="view">
-          <img className="bg" src="images/placeholders/1920x1200-1.jpg" /><img className="bg" src="images/placeholders/1920x1200-2.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" />
           <div className="content colors-e">
             <div className="container">
               <h2>Team</h2>
@@ -181,9 +181,9 @@ function App() {
                     </p>
                         <div className="separator-small"></div>
                         <p className="text-center">
-                          <a target="_blank" href="https://www.facebook.com/"><i className="fa fa-facebook heading-b"></i></a>
-                          <a target="_blank" href="http://www.youtube.com/"><i className="fa fa-youtube heading-b"></i></a>
-                          <a target="_blank" href="https://github.com/"><i className="fa fa-github heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><i className="fa fa-facebook heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="http://www.youtube.com/"><i className="fa fa-youtube heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://github.com/"><i className="fa fa-github heading-b"></i></a>
                         </p>
                       </div>
                     </div>
@@ -206,11 +206,11 @@ function App() {
                     </p>
                         <div className="separator-small"></div>
                         <p className="text-center">
-                          <a target="_blank" href="https://twitter.com/"><i className="fa fa-twitter heading-b"></i></a>
-                          <a target="_blank" href="https://www.linkedin.com/"><i className="fa fa-linkedin heading-b"></i></a>
-                          <a target="_blank" href="https://plus.google.com/"><i className="fa fa-google-plus heading-b"></i></a>
-                          <a target="_blank" href="https://vimeo.com/"><i className="fa fa-vimeo-square heading-b"></i></a>
-                          <a target="_blank" href="https://www.tumblr.com/"><i className="fa fa-tumblr heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://twitter.com/"><i className="fa fa-twitter heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/"><i className="fa fa-linkedin heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://plus.google.com/"><i className="fa fa-google-plus heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://vimeo.com/"><i className="fa fa-vimeo-square heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.tumblr.com/"><i className="fa fa-tumblr heading-b"></i></a>
                         </p>
                       </div>
                     </div>
@@ -233,10 +233,10 @@ function App() {
                     </p>
                         <div className="separator-small"></div>
                         <p className="text-center">
-                          <a target="_blank" href="https://www.flickr.com/"><i className="fa fa-flickr heading-b"></i></a>
-                          <a target="_blank" href="https://www.dropbox.com/"><i className="fa fa-dropbox heading-b"></i></a>
-                          <a target="_blank" href="https://www.xing.com/"><i className="fa fa-xing heading-b"></i></a>
-                          <a target="_blank" href="http://vk.com/"><i className="fa fa-vk heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.flickr.com/"><i className="fa fa-flickr heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.dropbox.com/"><i className="fa fa-dropbox heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.xing.com/"><i className="fa fa-xing heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="http://vk.com/"><i className="fa fa-vk heading-b"></i></a>
                         </p>
                       </div>
                     </div>
@@ -259,11 +259,11 @@ function App() {
                     </p>
                         <div className="separator-small"></div>
                         <p className="text-center">
-                          <a target="_blank" href="https://twitter.com/"><i className="fa fa-twitter heading-b"></i></a>
-                          <a target="_blank" href="https://www.linkedin.com/"><i className="fa fa-linkedin heading-b"></i></a>
-                          <a target="_blank" href="https://plus.google.com/"><i className="fa fa-google-plus heading-b"></i></a>
-                          <a target="_blank" href="https://vimeo.com/"><i className="fa fa-vimeo-square heading-b"></i></a>
-                          <a target="_blank" href="https://www.tumblr.com/"><i className="fa fa-tumblr heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://twitter.com/"><i className="fa fa-twitter heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/"><i className="fa fa-linkedin heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://plus.google.com/"><i className="fa fa-google-plus heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://vimeo.com/"><i className="fa fa-vimeo-square heading-b"></i></a>
+                          <a target="_blank" rel="noreferrer" href="https://www.tumblr.com/"><i className="fa fa-tumblr heading-b"></i></a>
                         </p>
                       </div>
                     </div>
@@ -292,7 +292,7 @@ function App() {
               <div className="row">
                 <div className="col-md-6 stretch-height pane">
                   <div className="view fluid-height">
-                    <img alt className="bg" src="images/placeholders/1920x1200-2.jpg" />
+                    <img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" />
                     <div className="content incut colors-d background-transparent">
                       <div className="position-middle-center text-center">
                         <a className="button background-lite-c heading-c" href="#work">View Our Work</a>
@@ -319,7 +319,7 @@ function App() {
       </section>
       <section id="services">
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-1.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" />
           <div className="content colors-e">
             <div className="container">
               <h2>Services</h2>
@@ -393,7 +393,7 @@ function App() {
           </div>
         </div>
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-1.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" />
           <div className="content half-size colors-h">
             <div className="container">
               <div className="show-list slogan">
@@ -413,7 +413,7 @@ function App() {
       </section>
       <section id="work">
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-0.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" />
           <div className="content no-bottom-padding colors-e">
             <div className="container">
               <h2>Our <span className="highlight">Work</span></h2>
@@ -424,11 +424,11 @@ function App() {
               <div className="container-fluid">
                 <div className="filter">
                   <ul className="nav nav-pills text-center">
-                    <li><a className="hover-effect" data-group="all" href="#">All</a></li>
-                    <li><a className="hover-effect" data-group="web" href="#">Web</a></li>
-                    <li><a className="hover-effect" data-group="video" href="#">Video</a></li>
-                    <li><a className="hover-effect" data-group="photography" href="#">Photography</a></li>
-                    <li><a className="hover-effect" data-group="design" href="#">Design</a> </li>
+                    <li><a className="hover-effect" data-group="all" href="http://www.starwars.com">All</a></li>
+                    <li><a className="hover-effect" data-group="web" href="http://www.starwars.com">Web</a></li>
+                    <li><a className="hover-effect" data-group="video" href="http://www.starwars.com">Video</a></li>
+                    <li><a className="hover-effect" data-group="photography" href="http://www.starwars.com">Photography</a></li>
+                    <li><a className="hover-effect" data-group="design" href="http://www.starwars.com">Design</a> </li>
                   </ul>
                 </div>
                 <div className="row">
@@ -586,7 +586,7 @@ function App() {
       </section>
       <section id="process">
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-2.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" />
           <div className="content colors-e">
             <div className="container">
               <h2>Our <span className="highlight">Process</span></h2>
@@ -625,7 +625,7 @@ function App() {
           </div>
         </div>
         <div className="view" id="numbers">
-          <img alt className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-1.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" />
           <div className="content half-size colors-h">
             <div className="container-fluid">
               <h3>Our <span className="highlight">Numbers</span></h3>
@@ -657,7 +657,7 @@ function App() {
       </section>
       <section id="skills">
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-0.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" />
           <div className="content colors-e">
             <div className="container">
               <h2>Our <span className="highlight">Skills</span></h2>
@@ -743,7 +743,7 @@ function App() {
       </section>
       <section id="contact">
         <div className="view">
-          <img alt className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt className="bg" src="images/placeholders/1920x1200-0.jpg" />
+          <img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" />
           <div className="content full-size colors-h">
             <div className="container">
               <h2>Contact</h2>
@@ -765,9 +765,9 @@ function App() {
                       </b>
                     </p>
                     <p className="big-font">
-                      <a target="_blank" href="https://twitter.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-twitter fa-stack-1x text-background"></i></span></a>
-                      <a target="_blank" href="https://www.facebook.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-facebook fa-stack-1x text-background"></i></span></a>
-                      <a target="_blank" href="http://www.youtube.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-youtube fa-stack-1x text-background"></i></span></a>
+                      <a target="_blank" rel="noreferrer" href="https://twitter.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-twitter fa-stack-1x text-background"></i></span></a>
+                      <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-facebook fa-stack-1x text-background"></i></span></a>
+                      <a target="_blank" rel="noreferrer" href="http://www.youtube.com/"><span className="fa-stack"><i className="fa fa-circle fa-stack-2x heading"></i><i className="fa fa-youtube fa-stack-1x text-background"></i></span></a>
                     </p>
                   </div>
                 </div>
@@ -778,7 +778,7 @@ function App() {
                 </div>
               </div>
               <div className="text-center">
-                <a className="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Locate Us on Map</a>
+                <a className="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="http://www.starwars.com">Locate Us on Map</a>
               </div>
             </div>
           </div>
