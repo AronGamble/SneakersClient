@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const url = 'https://sneakerspike.azurewebsites.net/inventory';
+var unique = [];
 
 function ShowAllSneakers() {
 
   const [sneakers, setSneakers] = useState([]);
+  const [brands, setBrands] = useState([]);
 
   useEffect(() => {
     getAllSneakers();
@@ -18,6 +20,9 @@ function ShowAllSneakers() {
 
       setSneakers(response.data);
 
+      unique = [...new Set(response.data.map(x => x.brand))];
+      setBrands(unique);
+
     })
       .catch(e => console.error('Error: $(e)')
       )
@@ -25,30 +30,27 @@ function ShowAllSneakers() {
 
   return (
 
+
+
     <div className="container-fluid">
       <div className="filter">
         <ul className="nav nav-pills text-center">
+          <li><a className="hover-effect" data-group="all" href="#">All</a></li>
 
-          {sneakers.map(s => (
-            <li><a className="hover-effect" data-group={s.brand} href="#">{s.brand}</a></li>
+          {brands.map(x => (
+               <li key={x}><a className="hover-effect" data-group={x} href="#">{x}</a></li>
+
           ))
-
           }
 
-
-          <li><a className="hover-effect" data-group="all" href="http://www.starwars.com">All</a></li>
-          <li><a className="hover-effect" data-group="web" href="http://www.starwars.com">Web</a></li>
-          <li><a className="hover-effect" data-group="video" href="http://www.starwars.com">Video</a></li>
-          <li><a className="hover-effect" data-group="photography" href="http://www.starwars.com">Photography</a></li>
-          <li><a className="hover-effect" data-group="design" href="http://www.starwars.com">Design</a> </li>
         </ul>
       </div>
       <div className="row">
         <div className="grid">
           {sneakers.map(s => (
-            <div key={s.brand} className="item col-md-3 col-sm-4 col-xs-6" data-groups='[{s.brand}]'>
+            <div key={s.id} className="item col-md-3 col-sm-4 col-xs-6" data-groups={'["' + s.brand + '"]'}>
               <a href="#!portfolio-item-1.html" className="hover-overlay">
-                <img alt="Project 1" src="https://sneakersimages.blob.core.windows.net/sneakers/IMG-4906.jpg" />
+                <img alt="Project 1" src={s.image} />
                 <div className="overlay background-90-e">
                   <div className="hidden-xs">
                     <p className="title heading-e">{s.brand}</p>
