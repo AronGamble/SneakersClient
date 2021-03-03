@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import moment from  'moment';
 
 const url = 'https://sneakerspike.azurewebsites.net/inventory';
 var unique = [];
@@ -30,7 +31,7 @@ function ShowAllSneakers() {
 
   return (
 
-
+    
 
     <div className="container-fluid">
       <div className="filter">
@@ -55,7 +56,7 @@ function ShowAllSneakers() {
                   <div className="hidden-xs">
                     <p className="title heading-e">{s.brand}</p>
                     <p className="text-center heading-e"><strong>{s.model}</strong></p>
-                    <p className="text-center">{s.purchaseDate}</p>
+                    <p className="text-center">{moment(s.purchaseDate).format('DD MMMM YYYY')}</p>
                   </div>
                 </div>
               </a>
