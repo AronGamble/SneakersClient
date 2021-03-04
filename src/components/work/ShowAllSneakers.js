@@ -4,18 +4,20 @@ import axios from 'axios';
 import moment from  'moment';
 
 const url = 'https://sneakerspike.azurewebsites.net/inventory';
+
 var unique = [];
 
 function ShowAllSneakers() {
 
   const [sneakers, setSneakers] = useState([]);
   const [brands, setBrands] = useState([]);
-
+  
   useEffect(() => {
     getAllSneakers();
   }, []);
 
   const getAllSneakers = async () => {
+    
 
     axios.get(url).then((response) => {
 
@@ -30,11 +32,9 @@ function ShowAllSneakers() {
   };
 
   return (
-
-    
-
     <div className="container-fluid">
       <div className="filter">
+
         <ul className="nav nav-pills text-center">
           <li><a className="hover-effect" data-group="all" href="#">All</a></li>
 
@@ -51,7 +51,7 @@ function ShowAllSneakers() {
           {sneakers.map(s => (
             <div key={s.id} className="item col-md-3 col-sm-4 col-xs-6" data-groups={'["' + s.brand + '"]'}>
               <a href="#!portfolio-item-1.html" className="hover-overlay">
-                <img alt="Project 1" src={s.image} />
+                <img alt={s.brand + ' ' + s.model} src={s.image} />
                 <div className="overlay background-90-e">
                   <div className="hidden-xs">
                     <p className="title heading-e">{s.brand}</p>

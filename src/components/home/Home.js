@@ -1,11 +1,23 @@
 import React from 'react';
+import { useQuery, gql } from '@apollo/client';
 
+const message = gql`
+  query GetMessage {
+    hello
+  }
+`;
 
+function Home() {
 
-function About() {
+  const { loading, error, data } = useQuery(message);
+  
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
   return (
 
     <section id="home">
+      
       <div className="view">
         <img className="bg" src="images/placeholders/1920x1200-0.jpg" alt="CABBAGE" />
         <img className="bg" src="images/placeholders/1920x1200-1.jpg" alt="CRIBBAGE" />
@@ -22,7 +34,8 @@ function About() {
                     <li>We Are Creative</li>
                   </ul>
                 </div>
-                <h1 className="heading text-right">SNEAKERS</h1>
+                <h1 className="heading text-right">{data.hello}</h1>
+
                 <p className="text-right title">
                   Integer ligula ante, posuere et ante quis, eleifend eleifend ipsum. In sed odio mi. Vivamus dapibus gravida facilisis. In hac habitasse platea dictumst. Aliquam tincidunt ultricies enim sed pellentesque. In in mi in libero laoreet ultricies. Phasellus non metus dolor parturient vitae neque venenatis.
             </p>
@@ -37,4 +50,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
