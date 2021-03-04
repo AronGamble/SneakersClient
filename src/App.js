@@ -9,7 +9,8 @@ import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 
 import { ApolloProvider } from '@apollo/client';
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
 import './App.css';
 
 const functionAppUrl = 'https://apolloexamplesneakers.azurewebsites.net/api/graphql?code=5kem5zHgdiH1piTjxUwj2J5RVLAai7LRCEQw/UWJNRrJ/qHpo4mIKQ==';
