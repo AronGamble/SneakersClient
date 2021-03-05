@@ -17,7 +17,7 @@ const functionAppUrl = 'https://apolloexamplesneakers.azurewebsites.net/api/grap
 
 const client = new ApolloClient({
   uri: functionAppUrl,
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 });
 
 function App() {
@@ -25,10 +25,10 @@ function App() {
     <>
       <ApolloProvider client={client}>
         <Home></Home>
+        <Work></Work>
         <About></About>
         <Team></Team>
         <Services></Services>
-        <Work></Work>
         <Process></Process>
         <Skills></Skills>
         <Contact></Contact>

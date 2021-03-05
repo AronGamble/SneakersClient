@@ -16,6 +16,7 @@ function Work() {
             </div>
             <div className="gallery background-e" data-default-group="all" data-overlay=".gallery-overlay">
               <ShowAllSneakers></ShowAllSneakers>
+              
             </div>
           </div>
         </div>

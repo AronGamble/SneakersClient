@@ -1,9 +1,25 @@
 import React from 'react';
+import { useQuery, gql } from '@apollo/client';
+
+const authors = gql`
+  query GetMessage {
+    books{
+      author
+    }
+  }
+`;
 
 function Contact() {
+
+
+  const { loading, error, data } = useQuery(authors);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
   return (
     <>
-       <section id="contact">
+      <section id="contact">
         <div className="view">
           <img alt="" className="bg" src="images/placeholders/1920x1200-1.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-2.jpg" /><img alt="" className="bg" src="images/placeholders/1920x1200-0.jpg" />
           <div className="content full-size colors-h">
@@ -23,7 +39,16 @@ function Contact() {
                     <p className="big-font">
                       <b>
                         <a href="mailto:info@ouraddress.com">info@ouraddress.com</a><br />
-                        <a href="http://www.ouraddress.com">www.ouraddress.com</a>
+                        <a href="http://www.ouraddress.com">www.ouraddress.com</a><br />
+                        {
+                          data.books.map(author =>
+                          (<>
+                            <a key={author.title} href="http://www.ouraddress.com">{author.author}</a><br />
+                            </>
+                          ))
+
+
+                        }
                       </b>
                     </p>
                     <p className="big-font">

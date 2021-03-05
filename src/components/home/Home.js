@@ -1,18 +1,9 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
 
-const message = gql`
-  query GetMessage {
-    hello
-  }
-`;
 
 function Home() {
 
-  const { loading, error, data } = useQuery(message);
-  
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+
 
   return (
 
@@ -34,7 +25,7 @@ function Home() {
                     <li>We Are Creative</li>
                   </ul>
                 </div>
-                <h1 className="heading text-right">{data.hello}</h1>
+                <h1 className="heading text-right">Sneakers</h1>
 
                 <p className="text-right title">
                   Integer ligula ante, posuere et ante quis, eleifend eleifend ipsum. In sed odio mi. Vivamus dapibus gravida facilisis. In hac habitasse platea dictumst. Aliquam tincidunt ultricies enim sed pellentesque. In in mi in libero laoreet ultricies. Phasellus non metus dolor parturient vitae neque venenatis.
